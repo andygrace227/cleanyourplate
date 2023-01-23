@@ -10,11 +10,11 @@ class Resource {
 
     notificationQueue: CYPNotification;
 
-
-    constructor(private name: String, private owner: User, private chain : CYPChain ) {
+    constructor(private name: String, private owner: User, private chain : CYPChain, private userLimit : number ) {
         this.name = name;
         this.owner = owner;
         this.chain = chain;
+        this.userLimit = userLimit;
     }
 
     loadStage(){
@@ -30,6 +30,6 @@ class Resource {
     }
 
     changeStage(){
-        
+
     }
 }
